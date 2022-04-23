@@ -7,7 +7,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
-   <script src="script/index.js" defer></script>
+   <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
+
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+
+   <script src="script/accordeon.js" defer></script>
+   <script src="script/modal.js" defer></script>
+   <script src="script/smoothScroll.js" defer></script>
    <title>Собираем ПК</title>
 </head>
 
@@ -19,9 +26,9 @@
          </a>
          <div class="header__menu">
             <nav class="header__nav block-center-horis">
-               <a href="#">Чем занимаемся</a>
-               <a href="#">Процесс работы</a>
-               <a href="#">Команда</a>
+               <a href="#work">Чем занимаемся</a>
+               <a href="#process">Процесс работы</a>
+               <a href="#team">Команда</a>
             </nav>
             <button class="button header__button">Зайти в кабинет</button>
          </div>
@@ -89,7 +96,7 @@
          </div>
       </div>
 
-      <section class="work">
+      <section class="work" id="work">
          <div class="container">
                <div class="work__wrap">
                   <div class="work__img">
@@ -106,7 +113,7 @@
          </div>
       </section>
 
-      <section class="process">
+      <section class="process" id="process">
          <div class="container">
                <div class="process__wrap">
                   <div class="process__title block-center-horis">
@@ -204,7 +211,7 @@
          </div>
       </section>
 
-      <section class="command">
+      <section class="command" id="team">
          <div class="container">
                <div class="process__title command__title">
                   <div class="process__img command__img-title">
