@@ -19,7 +19,7 @@ closeBtn.style.position = 'absolute'
 closeBtn.style.top = '3rem'
 closeBtn.style.right = '3rem'
 closeBtn.style.fontSize = '4rem'
-closeBtn.style.color = 'black'
+closeBtn.style.color = '#ccc'
 closeBtn.style.cursor = 'pointer'
 
 modalInner.appendChild(closeBtn)
