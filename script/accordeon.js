@@ -1,17 +1,21 @@
-const contents = document.querySelectorAll('.program-line__content')
+const accordeon = () => {
 
-contents.forEach((el, arr) => {
-   const title = el.querySelector('.program-line__title')
-   const descr = el.querySelector('.program-line__descr')
-   
-   title.addEventListener('click', () => {
-      const activeDescr = document.querySelectorAll('.program-line__descr.active')
+   const contents = document.querySelectorAll('.program-line__content')
 
-      activeDescr.forEach(act => {
-         act.classList.remove('active')
-         descr.classList.toggle('active')
+   contents.forEach((el, arr) => {
+      const title = el.querySelector('.program-line__title')
+      const descr = el.querySelector('.program-line__descr')
+      
+      title.addEventListener('click', () => {
+         const activeDescr = document.querySelectorAll('.program-line__descr.active')
+
+         activeDescr.forEach(act => {
+            act.classList.remove('active')
+            descr.classList.toggle('active')
+         })
       })
-
    })
 
-})
+}
+
+accordeon()
